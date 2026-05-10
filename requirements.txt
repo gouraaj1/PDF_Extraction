@@ -3,3 +3,4 @@ pdfplumber
 pypdf
 databricks_openai
 typing_extensions
+shutila
