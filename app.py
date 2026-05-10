@@ -1,3 +1,4 @@
+print("App starting...")
 import os
 import re
 import io
@@ -185,7 +186,7 @@ class VolumeManager:
 
         if self.use_uc_volume:
             volume_path = f"{self.config['pdf_volume_path'].rstrip('/')}/{unique_name}"
-            try:
+            try:    
                 dbutils.fs.cp(f"file:{temp_path}", volume_path)
                 return {
                     "file_name": uploaded_file.name,
