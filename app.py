@@ -49,10 +49,10 @@ log = logging.getLogger("PDFExtractionStreamlitApp")
 DEFAULT_CONFIG = {
     "catalog": os.getenv("CATALOG", "structured_data"),
     "schema": os.getenv("SCHEMA", "extraction"),
-    "volume": os.getenv("VOLUME", "pdf_files"),
+    "volume": os.getenv("VOLUME", "uploaded_pdf_files"),
     "pdf_volume_path": os.getenv(
         "PDF_VOLUME_PATH",
-        "/Volumes/structured_data/extraction/pdf_files",
+        "/Volumes/structured_data/extraction/documents/uploaded_pdf_files",
     ),
     "results_table": os.getenv(
         "RESULTS_TABLE",
